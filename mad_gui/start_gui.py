@@ -21,7 +21,7 @@ from typing import Optional, Sequence, Type
 
 
 def start_gui(
-    data_dir=Path("."),
+    data_dir=Path(""),
     plugins: Optional[Sequence[BasePlugin]] = (
         ExampleImporter,
         StationaryMomentsDetector,

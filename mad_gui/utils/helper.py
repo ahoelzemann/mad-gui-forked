@@ -54,7 +54,7 @@ def resource_path(relative_path):
     try:
         base_path, relative_path = _get_resource_path(relative_path)
     except (IndexError, FileNotFoundError):
-        base_path = os.path.abspath(".")
+        base_path = os.path.abspath("")
     return os.path.join(base_path, relative_path)
 
 
